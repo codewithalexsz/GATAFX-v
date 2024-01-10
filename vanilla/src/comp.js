@@ -1,6 +1,6 @@
-import "../dist/output.css";
-import "../src/app.js";
-import "../src/bg.css";
+import "./output.css";
+import "./app.js";
+import "./bg.css";
 
 //HEADER NAV
 document.querySelector("#header").innerHTML = `
