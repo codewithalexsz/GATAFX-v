@@ -1,4 +1,9 @@
 "use strict";
+import "./comp.js";
+import "../main.js";
+
+// import imagePaths from "../main.js";
+// console.log(imageModules);
 
 // let currentUrl = window.location.href;
 // if (currentUrl.endsWith(".html")) {
@@ -156,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //NEW TRIAL METHOD
   // Function to update the modal summary
   function updateModalSummary(product) {
-    summaryImg.src = `/assets/${product.productimg}.png`;
+    summaryImg.src = `../assets/${product.productimg}.png`;
     summaryName.innerHTML = product.productname;
     summaryDesc.innerHTML = product.productdesc;
     summarySubtotal.innerHTML = product.productsubtotal;
@@ -186,7 +191,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to update the modal summary
   function updateModalSummary(product) {
-    summaryImg.src = `/assets/${product.productimg}.png`;
+    summaryImg.src = `../assets/${product.productimg}.png`;
+    console.log(summaryImg.src);
+
     summaryName.innerHTML = product.productname;
     summaryDesc.innerHTML = product.productdesc;
     summarySubtotal.innerHTML = product.productsubtotal;

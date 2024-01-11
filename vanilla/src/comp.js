@@ -1,6 +1,13 @@
 import "./output.css";
 import "./app.js";
 import "./bg.css";
+import "../main.js";
+import "../assets/logo.jpg";
+import "../assets/product1.png";
+import "../assets/product2.png";
+import "../assets/product3.png";
+
+// console.log(imageModules);
 
 //HEADER NAV
 document.querySelector("#header").innerHTML = `
@@ -10,7 +17,7 @@ class="flex justify-between items-center py-6 px-6 border-b-2 border-yellow-400"
 <div class="md:flex md:items-center md:gap-12">
   <a href="/" id="homelogo" class="flex items-center">
     <img
-      src="/assets/logo.jpg"
+      src="../assets/logo.jpg"
       class="h-12 rounded-full w-12"
       alt="logo"
     />
@@ -210,7 +217,7 @@ class="flex justify-between items-center py-6 px-6 border-b-2 border-yellow-400"
 
 // FOOTER
 document.querySelector("#footer").innerHTML = `
-<div class="py-10 px-2">
+<div class="py-10 px-2 border-t-[1px] border-yellow-400">
       <div
         class="sm:flex grid items-center justify-center gap-[4rem] sm:gap-[15rem]"
       >
@@ -218,7 +225,7 @@ document.querySelector("#footer").innerHTML = `
           <div class="w-max mb-3 mx-auto">
             <a href="" class="flex items-center">
               <img
-                src="/assets/logo.jpg"
+                src="../assets/logo.jpg"
                 class="h-14 rounded-full w-14"
                 alt="logo"
               />
